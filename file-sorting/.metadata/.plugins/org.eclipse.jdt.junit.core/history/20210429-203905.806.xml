@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestWriteFileService" project="file-sorting" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.saleshero.application.service.TestWriteFileService" time="0.009">
+    <testcase name="testNumberCountWhileWrite" classname="com.saleshero.application.service.TestWriteFileService" time="0.007"/>
+    <testcase name="testWritingAFile" classname="com.saleshero.application.service.TestWriteFileService" time="0.002"/>
+  </testsuite>
+</testrun>

@@ -1,0 +1,25 @@
+package com.saleshero.application.service;
+
+import java.io.BufferedReader;
+import java.io.File;
+
+import org.junit.Rule;
+import org.junit.rules.ExpectedException;
+import org.mockito.Mock;
+
+import com.saleshero.service.ReadFileService;
+import com.saleshero.service.WriteFileService;
+
+public class TestWriteFileService {
+	@Mock
+    private WriteFileService writeFileService;
+
+    @Mock
+    private BufferedReader reader;
+
+    @Mock
+    private File file;
+    
+    @Rule
+    public ExpectedException exception = ExpectedException.none(); 
+}
