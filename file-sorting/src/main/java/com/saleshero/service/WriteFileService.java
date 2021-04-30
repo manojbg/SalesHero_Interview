@@ -23,7 +23,6 @@ public class WriteFileService
         Collections.sort(values);
         try
         {
-        	clearTheFile(filePath);
             if(!file.exists())
             {
                 file.createNewFile();
@@ -54,20 +53,4 @@ public class WriteFileService
         return values;
     }
     
-    public boolean clearTheFile(String filePath) {
-        FileWriter fwOb;
-		try {
-			fwOb = new FileWriter(filePath, false);
-			PrintWriter pwOb = new PrintWriter(fwOb, false);
-	        pwOb.flush();
-	        pwOb.close();
-	        fwOb.close();
-	        return true;
-		} catch (IOException e) {
-			LOGGER.error("Error while writing sorted values to file ");
-            e.printStackTrace();
-            return false;
-		} 
-        
-    }
 }
